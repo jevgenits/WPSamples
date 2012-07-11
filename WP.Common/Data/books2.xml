@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<books>
+  <book id="1">
+    <title>Book1</title>
+    <description>book 1 description</description>
+    <year>2010</year>
+  </book>
+  <book id="2">
+    <title>Book2</title>
+    <description>book 2 description</description>
+    <year>2011</year>
+  </book>
+  <book id="3">
+    <title>Book3</title>
+    <description>book 3 description</description>
+    <year>2012</year>
+  </book>
+</books>

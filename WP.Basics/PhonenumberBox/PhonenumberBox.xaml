@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="WP.Basics.PhonenumberBox.PhonenumberBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="480"
+             d:DesignWidth="480"
+             FontFamily="{StaticResource PhoneFontFamilyNormal}"
+             FontSize="{StaticResource PhoneFontSizeNormal}"
+             Foreground="{StaticResource PhoneForegroundBrush}"
+             mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <Grid>
+                <TextBox x:Name="tbRealValue" HorizontalAlignment="Stretch" />
+                <Rectangle x:Name="overlay"
+                           HorizontalAlignment="Stretch"
+                           VerticalAlignment="Stretch"
+                           Fill="Transparent"
+                           ManipulationCompleted="Tap" />
+            </Grid>
+            <Grid Margin="0, 15, 0, 0" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="9" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="9" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="9" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="9" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="9" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="9" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0"
+                        Grid.Column="0"
+                        Click="ButtonClick"
+                        Content="1"
+                        Tag="1" />
+                <Button Grid.Row="0"
+                        Grid.Column="2"
+                        Click="ButtonClick"
+                        Content="2"
+                        Tag="2" />
+                <Button Grid.Row="0"
+                        Grid.Column="4"
+                        Click="ButtonClick"
+                        Content="3"
+                        Tag="3" />
+                <Button Grid.Row="2"
+                        Grid.Column="0"
+                        Click="ButtonClick"
+                        Content="4"
+                        Tag="4" />
+                <Button Grid.Row="2"
+                        Grid.Column="2"
+                        Click="ButtonClick"
+                        Content="5"
+                        Tag="5" />
+                <Button Grid.Row="2"
+                        Grid.Column="4"
+                        Click="ButtonClick"
+                        Content="6"
+                        Tag="6" />
+                <Button Grid.Row="4"
+                        Grid.Column="0"
+                        Click="ButtonClick"
+                        Content="7"
+                        Tag="7" />
+                <Button Grid.Row="4"
+                        Grid.Column="2"
+                        Click="ButtonClick"
+                        Content="8"
+                        Tag="8" />
+                <Button Grid.Row="4"
+                        Grid.Column="4"
+                        Click="ButtonClick"
+                        Content="9"
+                        Tag="9" />
+                <Button Grid.Row="6"
+                        Grid.Column="0"
+                        Click="ButtonClick"
+                        Content="+"
+                        IsEnabled="False"
+                        Tag="+" />
+                <Button Grid.Row="6"
+                        Grid.Column="2"
+                        Click="ButtonClick"
+                        Content="0"
+                        Tag="0" />
+                <Button Grid.Row="6"
+                        Grid.Column="4"
+                        Click="ButtonClick"
+                        Content="-"
+                        IsEnabled="False"
+                        Tag="-" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8939E192-F535-4E08-ACE3-E6AB8749743E}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WP.IoC</RootNamespace>
+    <AssemblyName>WP.IoC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>WP.IoC.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>WP.IoC.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Ninject, Version=2.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataProviders\ITextDataProvider.cs" />
+    <Compile Include="DataProviders\ProductionTextDataProvider.cs" />
+    <Compile Include="DataProviders\TestTextDataProvider.cs" />
+    <Compile Include="NinjectSamples\IoCContainter.cs" />
+    <Compile Include="NinjectSamples\NinjectSampleView.xaml.cs">
+      <DependentUpon>NinjectSampleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NinjectSamples\NinjectSampleViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModelLocator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Components\Ninject\.svn\all-wcprops" />
+    <None Include="Components\Ninject\.svn\entries" />
+    <None Include="Components\Ninject\.svn\prop-base\Ninject.dll.svn-base" />
+    <None Include="Components\Ninject\.svn\prop-base\Ninject.pdb.svn-base" />
+    <None Include="Components\Ninject\.svn\text-base\LICENSE.txt.svn-base" />
+    <None Include="Components\Ninject\.svn\text-base\Ninject.dll.svn-base" />
+    <None Include="Components\Ninject\.svn\text-base\Ninject.pdb.svn-base" />
+    <None Include="Components\Ninject\.svn\text-base\Ninject.xml.svn-base" />
+    <None Include="Components\Ninject\extensions\.svn\all-wcprops" />
+    <None Include="Components\Ninject\extensions\.svn\entries" />
+    <None Include="Components\Ninject\extensions\.svn\prop-base\CommonServiceLocator.NinjectAdapter.dll.svn-base" />
+    <None Include="Components\Ninject\extensions\.svn\prop-base\CommonServiceLocator.NinjectAdapter.pdb.svn-base" />
+    <None Include="Components\Ninject\extensions\.svn\prop-base\Ninject.Extensions.Conventions.dll.svn-base" />
+    <None Include="Components\Ninject\extensions\.svn\prop-base\Ninject.Extensions.Conventions.pdb.svn-base" />
+    <None Include="Components\Ninject\extensions\.svn\text-base\CommonServiceLocator.NinjectAdapter.dll.svn-base" />
+    <None Include="Components\Ninject\extensions\.svn\text-base\CommonServiceLocator.NinjectAdapter.pdb.svn-base" />
+    <None Include="Components\Ninject\extensions\.svn\text-base\Ninject.Extensions.Conventions.dll.svn-base" />
+    <None Include="Components\Ninject\extensions\.svn\text-base\Ninject.Extensions.Conventions.pdb.svn-base" />
+    <None Include="Components\Ninject\extensions\.svn\text-base\Ninject.Extensions.Conventions.xml.svn-base" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Components\Ninject\extensions\CommonServiceLocator.NinjectAdapter.dll" />
+    <Content Include="Components\Ninject\extensions\Ninject.Extensions.Conventions.dll" />
+    <Content Include="Components\Ninject\extensions\Ninject.Extensions.Conventions.xml" />
+    <Content Include="Components\Ninject\LICENSE.txt" />
+    <Content Include="Components\Ninject\Ninject.dll" />
+    <Content Include="Components\Ninject\Ninject.xml" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="NinjectSamples\NinjectSampleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
