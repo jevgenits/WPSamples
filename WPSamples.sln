@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP.ScheduledTask", "WP.Sche
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP.Sensors", "WP.Sensors\WP.Sensors.csproj", "{D224E3A7-75D2-41D6-BA49-02C9DC980C9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP.Services", "WP.Services\WP.Services.csproj", "{D5451585-BA0B-4046-A8C9-F28F27F7DF60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,12 @@ Global
 		{D224E3A7-75D2-41D6-BA49-02C9DC980C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D224E3A7-75D2-41D6-BA49-02C9DC980C9E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D224E3A7-75D2-41D6-BA49-02C9DC980C9E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D5451585-BA0B-4046-A8C9-F28F27F7DF60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5451585-BA0B-4046-A8C9-F28F27F7DF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5451585-BA0B-4046-A8C9-F28F27F7DF60}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D5451585-BA0B-4046-A8C9-F28F27F7DF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5451585-BA0B-4046-A8C9-F28F27F7DF60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5451585-BA0B-4046-A8C9-F28F27F7DF60}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

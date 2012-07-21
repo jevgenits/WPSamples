@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IMIBPContract" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="Transport" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="https://ws.tag.microsoft.com/Service.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IMIBPContract"
+                contract="MicrosoftTagService.IMIBPContract" name="BasicHttpBinding_IMIBPContract" />
+        </client>
+    </system.serviceModel>
+</configuration>
