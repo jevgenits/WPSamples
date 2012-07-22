@@ -25,5 +25,10 @@ namespace WP.Services
         {
             NavigationService.Navigate(new Uri("/Views/MicrosoftTagServicePage.xaml", UriKind.Relative));
         }
+
+        private void RSSReaderClick(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Views/RSSReaderPage.xaml", UriKind.Relative));
+        }
     }
 }
