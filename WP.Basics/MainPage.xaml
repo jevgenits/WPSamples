@@ -38,6 +38,7 @@
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="input scopes" Click="GoToInputScopes" />
                 <shell:ApplicationBarMenuItem Text="navigation" Click="GoToNavigation" />
+                <shell:ApplicationBarMenuItem Text="media player" Click="GoToMediaPlayer" />
                 <shell:ApplicationBarMenuItem Text="storing data" Click="GoToStoringData" />
                 <shell:ApplicationBarMenuItem Text="launchers" Click="GoToLaunchers" />
                 <shell:ApplicationBarMenuItem Text="choosers" Click="GoToChoosers" />

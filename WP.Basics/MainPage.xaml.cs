@@ -48,5 +48,9 @@ namespace WP.Basics
             NavigationService.Navigate(new Uri("/InputScopes/InputScopesPage.xaml", UriKind.Relative));
         }
 
+        private void GoToMediaPlayer(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MediaPlayer/MediaPlayerPage.xaml", UriKind.Relative));
+        }
     }
 }
