@@ -30,5 +30,10 @@ namespace WP.Services
         {
             NavigationService.Navigate(new Uri("/Views/RSSReaderPage.xaml", UriKind.Relative));
         }
+
+        private void TwitterSearchServiceClick(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Views/TwitterSearchServicePage.xaml", UriKind.Relative));
+        }
     }
 }

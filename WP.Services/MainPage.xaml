@@ -46,8 +46,9 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsMenuEnabled="True" IsVisible="True">
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Click="RSSReaderClick" Text="rss reader" />
                 <shell:ApplicationBarMenuItem Click="MicrosoftTagServiceClick" Text="microsoft tag" />
+                <shell:ApplicationBarMenuItem Click="RSSReaderClick" Text="rss reader" />
+                <shell:ApplicationBarMenuItem Click="TwitterSearchServiceClick" Text="twitter search" />
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

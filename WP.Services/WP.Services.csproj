@@ -79,6 +79,9 @@
     <Compile Include="Views\RSSReaderPage.xaml.cs">
       <DependentUpon>RSSReaderPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TwitterSearchServicePage.xaml.cs">
+      <DependentUpon>TwitterSearchServicePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -94,6 +97,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\RSSReaderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TwitterSearchServicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
