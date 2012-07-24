@@ -1,11 +1,12 @@
-﻿<phone:PhoneApplicationPage x:Class="WP.Basics.MainPage"
+﻿<phone:PhoneApplicationPage x:Class="WP.Basics.Controls.CustomControlsPage"
                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:Controls="clr-namespace:WP.Basics.Controls"
                             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                             xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
                             xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
-                            d:DesignHeight="696"
+                            d:DesignHeight="768"
                             d:DesignWidth="480"
                             FontFamily="{StaticResource PhoneFontFamilyNormal}"
                             FontSize="{StaticResource PhoneFontSizeNormal}"
@@ -32,42 +33,22 @@
             <TextBlock x:Name="PageTitle"
                        Margin="9,-7,0,0"
                        Style="{StaticResource PhoneTextTitle1Style}"
-                       Text="basic samples" />
+                       Text="custom controls" />
         </StackPanel>
 
         <!--  ContentPanel - place additional content here  -->
-        <Grid x:Name="ContentPanel"
-              Grid.Row="1"
-              Margin="12,0,12,0">
-            <ListBox>
-                <ListBoxItem Margin="15" Tap="GoToInputScopes">
-                    <TextBlock FontSize="30" Text="input scopes" />
-                </ListBoxItem>
-                <ListBoxItem Margin="15" Tap="GoToNavigation">
-                    <TextBlock FontSize="30" Text="navigation" />
-                </ListBoxItem>
-                <ListBoxItem Margin="15" Tap="GoToMediaPlayer">
-                    <TextBlock FontSize="30" Text="media player" />
-                </ListBoxItem>
-                <ListBoxItem Margin="15" Tap="GoToStoringData">
-                    <TextBlock FontSize="30" Text="storing data" />
-                </ListBoxItem>
-                <ListBoxItem Margin="15" Tap="GoToLaunchers">
-                    <TextBlock FontSize="30" Text="launchers" />
-                </ListBoxItem>
-                <ListBoxItem Margin="15" Tap="GoToChoosers">
-                    <TextBlock FontSize="30" Text="choosers" />
-                </ListBoxItem>
-                <ListBoxItem Margin="15" Tap="GoToLiveTiles">
-                    <TextBlock FontSize="30" Text="live tiles" />
-                </ListBoxItem>
-                <ListBoxItem Margin="15" Tap="GoToTouchSamples">
-                    <TextBlock FontSize="30" Text="touch" />
-                </ListBoxItem>
-                <ListBoxItem Margin="15" Tap="GoToCustomControls">
-                    <TextBlock FontSize="30" Text="custom controls" />
-                </ListBoxItem>
-            </ListBox>
-        </Grid>
+        <StackPanel x:Name="ContentPanel"
+                    Grid.Row="1"
+                    Margin="12,0,12,0">
+            <!--  Horizontal StackPanel  -->
+            <Controls:HorizontalStackPanel />
+            <!--  TagToInlineParserSampleControl  -->
+            <Controls:TagToInlineParserSampleControl />
+            <!--  VirtualizedItemsControl  -->
+            <Controls:VirtualizedItemsControl />
+            <!--  DialerControl  -->
+            <Controls:DialerControl />
+        </StackPanel>
     </Grid>
+
 </phone:PhoneApplicationPage>

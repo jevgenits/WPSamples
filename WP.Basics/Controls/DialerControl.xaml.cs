@@ -2,16 +2,14 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Threading;
 
-namespace WP.Basics.PhonenumberBox
+namespace WP.Basics.Controls
 {
-    public partial class PhonenumberBox : UserControl
+    public partial class DialerControl : UserControl
     {
-        DispatcherTimer dt = new DispatcherTimer() { Interval = TimeSpan.FromMilliseconds(200)};
-        
+        DispatcherTimer dt = new DispatcherTimer() { Interval = TimeSpan.FromMilliseconds(200) };
+
 
         private int lastPosition = -1;
         private int CurrentPosition
@@ -19,8 +17,8 @@ namespace WP.Basics.PhonenumberBox
             get
             {
                 int position = tbRealValue.Text.IndexOf("|", System.StringComparison.Ordinal);
-                
-                if(position <= -1 && lastPosition > -1)
+
+                if (position <= -1 && lastPosition > -1)
                 {
                     return lastPosition;
                 }
@@ -29,24 +27,24 @@ namespace WP.Basics.PhonenumberBox
             }
         }
 
-        public PhonenumberBox()
+        public DialerControl()
         {
             InitializeComponent();
             dt.Tick += (s, e) =>
-                      {
-                          int cPos = tbRealValue.Text.IndexOf("|", System.StringComparison.Ordinal);
-                          if (cPos <= -1)
-                          {
-                              RemoveDigitAtPosition(lastPosition);
-                              AddDigitAtPosition(lastPosition, "|");
-                          }
-                          else
-                          {
-                              lastPosition = cPos;
-                              RemoveDigitAtPosition(cPos);
-                              AddDigitAtPosition(lastPosition, " ");
-                          }
-                      };
+            {
+                int cPos = tbRealValue.Text.IndexOf("|", System.StringComparison.Ordinal);
+                if (cPos <= -1)
+                {
+                    RemoveDigitAtPosition(lastPosition);
+                    AddDigitAtPosition(lastPosition, "|");
+                }
+                else
+                {
+                    lastPosition = cPos;
+                    RemoveDigitAtPosition(cPos);
+                    AddDigitAtPosition(lastPosition, " ");
+                }
+            };
         }
 
         private void ButtonClick(object sender, RoutedEventArgs e)
@@ -61,7 +59,7 @@ namespace WP.Basics.PhonenumberBox
         private void ProcessDigit(string digitInStringFormat)
         {
             bool isTimerRunning = dt.IsEnabled;
-            
+
             if (isTimerRunning)
             {
                 dt.Stop();
@@ -105,7 +103,7 @@ namespace WP.Basics.PhonenumberBox
                 {
                     tbRealValue.Text = tbRealValue.Text.Substring(0, tbRealValue.Text.Length - 1);
                 }
-                else if(tbRealValue.Text.Length > position)
+                else if (tbRealValue.Text.Length > position)
                 {
                     if (isTimerRunning && lastPosition != -1 && tbRealValue.Text[position] != '|' && tbRealValue.Text[position] != ' ')
                     {
@@ -153,16 +151,16 @@ namespace WP.Basics.PhonenumberBox
             {
                 d -= 21;
             }
-            int position = (int) (d/14) - 1;
+            int position = (int)(d / 14) - 1;
 
-            if(position < -1)
+            if (position < -1)
             {
                 position = -1;
             }
             else
             {
                 // change position
-                if(CurrentPosition > -1)
+                if (CurrentPosition > -1)
                 {
                     dt.Stop();
                     RemoveDigitAtPosition(CurrentPosition);

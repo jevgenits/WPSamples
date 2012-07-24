@@ -65,6 +65,22 @@
     <Compile Include="Choosers\ChoosersSamplePage.xaml.cs">
       <DependentUpon>ChoosersSamplePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\CustomControlsPage.xaml.cs">
+      <DependentUpon>CustomControlsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DialerControl.xaml.cs">
+      <DependentUpon>DialerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HorizontalStackPanel.xaml.cs">
+      <DependentUpon>HorizontalStackPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TagToInlineParserSampleControl.xaml.cs">
+      <DependentUpon>TagToInlineParserSampleControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBlockInlineConvertor.cs" />
+    <Compile Include="Controls\VirtualizedItemsControl.xaml.cs">
+      <DependentUpon>VirtualizedItemsControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataStoring\DataStoringSample.xaml.cs">
       <DependentUpon>DataStoringSample.xaml</DependentUpon>
     </Compile>
@@ -90,9 +106,6 @@
     <Compile Include="Navigation\NavigationPage2.xaml.cs">
       <DependentUpon>NavigationPage2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PhonenumberBox\PhonenumberBox.xaml.cs">
-      <DependentUpon>PhonenumberBox.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Profiling\MemoryProfiler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TouchSamples\ManipulationEventsSample.xaml.cs">
@@ -117,6 +130,26 @@
     <Page Include="Choosers\ChoosersSamplePage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CustomControlsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DialerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\HorizontalStackPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TagToInlineParserSampleControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\VirtualizedItemsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DataStoring\DataStoringSample.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -147,10 +180,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Navigation\NavigationPage2.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="PhonenumberBox\PhonenumberBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
