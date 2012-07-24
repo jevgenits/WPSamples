@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Helpers\HelperProperties.cs" />
     <Compile Include="IsolatedStorage\IsolatedStorageHelper.cs" />
     <Compile Include="LinqToXmlSample\LinqToXmlParser.cs" />
     <Compile Include="Models\BookCollectionModel.cs" />

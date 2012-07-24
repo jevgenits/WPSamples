@@ -59,6 +59,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animations\StoryboardProgrammaticallySample.xaml.cs">
+      <DependentUpon>StoryboardProgrammaticallySample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -90,7 +93,6 @@
     <Compile Include="Launchers\LaunchersSamplePage.xaml.cs">
       <DependentUpon>LaunchersSamplePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="License\LicenseHelper.cs" />
     <Compile Include="LiveTiles\LiveTileUpdateSample.xaml.cs">
       <DependentUpon>LiveTileUpdateSample.xaml</DependentUpon>
     </Compile>
@@ -127,6 +129,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Animations\StoryboardProgrammaticallySample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Choosers\ChoosersSamplePage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
