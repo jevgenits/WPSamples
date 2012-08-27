@@ -28,7 +28,7 @@
                     Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle"
                        Style="{StaticResource PhoneTextNormalStyle}"
-                       Text="EUGENEDOTNET SERVICES" />
+                       Text="JEVGENIDOTNET SERVICES" />
             <TextBlock x:Name="PageTitle"
                        Margin="9,-7,0,0"
                        Style="{StaticResource PhoneTextTitle1Style}"

@@ -13,7 +13,7 @@ namespace WP.Common.LinqToXmlSample
         public static IEnumerable<BookModel> ParseBooks()
         {
             var xml =
-                Application.GetResourceStream(new Uri("/EugeneDotnetCommon;component/Data/books.xml", UriKind.Relative));
+                Application.GetResourceStream(new Uri("/WP.Common;component/Data/books.xml", UriKind.Relative));
             using (var sr = new StreamReader(xml.Stream, Encoding.UTF8))
             {
                 // Load XDocument

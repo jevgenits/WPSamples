@@ -80,25 +80,6 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Components\Ninject\.svn\all-wcprops" />
-    <None Include="Components\Ninject\.svn\entries" />
-    <None Include="Components\Ninject\.svn\prop-base\Ninject.dll.svn-base" />
-    <None Include="Components\Ninject\.svn\prop-base\Ninject.pdb.svn-base" />
-    <None Include="Components\Ninject\.svn\text-base\LICENSE.txt.svn-base" />
-    <None Include="Components\Ninject\.svn\text-base\Ninject.dll.svn-base" />
-    <None Include="Components\Ninject\.svn\text-base\Ninject.pdb.svn-base" />
-    <None Include="Components\Ninject\.svn\text-base\Ninject.xml.svn-base" />
-    <None Include="Components\Ninject\extensions\.svn\all-wcprops" />
-    <None Include="Components\Ninject\extensions\.svn\entries" />
-    <None Include="Components\Ninject\extensions\.svn\prop-base\CommonServiceLocator.NinjectAdapter.dll.svn-base" />
-    <None Include="Components\Ninject\extensions\.svn\prop-base\CommonServiceLocator.NinjectAdapter.pdb.svn-base" />
-    <None Include="Components\Ninject\extensions\.svn\prop-base\Ninject.Extensions.Conventions.dll.svn-base" />
-    <None Include="Components\Ninject\extensions\.svn\prop-base\Ninject.Extensions.Conventions.pdb.svn-base" />
-    <None Include="Components\Ninject\extensions\.svn\text-base\CommonServiceLocator.NinjectAdapter.dll.svn-base" />
-    <None Include="Components\Ninject\extensions\.svn\text-base\CommonServiceLocator.NinjectAdapter.pdb.svn-base" />
-    <None Include="Components\Ninject\extensions\.svn\text-base\Ninject.Extensions.Conventions.dll.svn-base" />
-    <None Include="Components\Ninject\extensions\.svn\text-base\Ninject.Extensions.Conventions.pdb.svn-base" />
-    <None Include="Components\Ninject\extensions\.svn\text-base\Ninject.Extensions.Conventions.xml.svn-base" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml" />
   </ItemGroup>

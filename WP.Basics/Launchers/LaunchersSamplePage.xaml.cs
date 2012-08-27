@@ -15,7 +15,7 @@ namespace WP.Basics.Launchers
         private void LaunchWebBrowserTaks(object sender, RoutedEventArgs e)
         {
             var wbTask = new WebBrowserTask();
-            wbTask.Uri = new Uri("http://www.EUGENEDOTNET", UriKind.Absolute);
+            wbTask.Uri = new Uri("http://www.jevgeni.net", UriKind.Absolute);
             wbTask.Show();
         }
     }

@@ -28,7 +28,7 @@ namespace WP.Basics.LiveTiles
 
             _periodicTask = new PeriodicTask(PeriodicTaskName);
             
-            _periodicTask.Description = "eugenedotnet live tile update task";
+            _periodicTask.Description = "JEVGENIDOTNET live tile update task";
 
             try
             {
