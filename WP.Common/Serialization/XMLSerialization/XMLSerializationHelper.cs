@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 
 namespace WP.Common.Serialization.XMLSerialization
 {
-    public class XMLSerializerHelper
+    public class XMLSerializationHelper
     {
         public static void Serialize(Stream streamObject, object objForSerialization)
         {

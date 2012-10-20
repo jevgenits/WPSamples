@@ -40,11 +40,11 @@ namespace WP.Common.Serialization
             {
                 // time in milliseconds
                 double serTime = TestMethod(() =>
-                    XMLSerializerHelper.Serialize(ms, sd));
+                    XMLSerializationHelper.Serialize(ms, sd));
                 long size = ms.Length;
                 ms.Position = 0;
                 double deSerTime = TestMethod(() =>
-                    XMLSerializerHelper.Deserialize(ms, typeof(BookModel)));
+                    XMLSerializationHelper.Deserialize(ms, typeof(BookModel)));
             }
         }
 

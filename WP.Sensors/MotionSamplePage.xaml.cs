@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using Microsoft.Devices.Sensors;
 using Microsoft.Phone.Controls;
-using Microsoft.Xna.Framework;
 
 namespace WP.Sensors
 {
@@ -26,11 +25,11 @@ namespace WP.Sensors
 
         void MotionCurrentValueChanged(object sender, SensorReadingEventArgs<MotionReading> e)
         {
-            Deployment.Current.Dispatcher.BeginInvoke(() =>
+            Deployment.Current.Dispatcher.BeginInvoke(() => 
                 {
-                    tbYaw.Text = MathHelper.ToDegrees(e.SensorReading.Attitude.Yaw).ToString("0") + "°";
-                    tbPitch.Text = MathHelper.ToDegrees(e.SensorReading.Attitude.Pitch).ToString("0") + "°";
-                    tbRoll.Text = MathHelper.ToDegrees(e.SensorReading.Attitude.Roll).ToString("0") + "°";
+                    tbYaw.Text = e.SensorReading.Attitude.Yaw.ToString("0");
+                    tbPitch.Text = e.SensorReading.Attitude.Pitch.ToString("0");
+                    tbRoll.Text = e.SensorReading.Attitude.Roll.ToString("0");
 
                     tbAXCoordinate.Text =
                         e.SensorReading.DeviceAcceleration.X.ToString("0.000");
