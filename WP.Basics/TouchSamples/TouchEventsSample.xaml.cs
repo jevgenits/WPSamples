@@ -13,6 +13,18 @@ namespace WP.Basics.TouchSamples
             Touch.FrameReported += TouchFrameReported;
         }
 
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            Touch.FrameReported += TouchFrameReported;
+        }
+
+        protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+            Touch.FrameReported -= TouchFrameReported;
+        }
+
         void TouchFrameReported(object sender, TouchFrameEventArgs e)
         {
             TouchPointCollection tpc = e.GetTouchPoints(ContentCanvas);
@@ -23,11 +35,5 @@ namespace WP.Basics.TouchSamples
                 ContentCanvas.Children.Add(el);
             });
         }
-
-        protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
-        {
-            Touch.FrameReported -= TouchFrameReported;
-        }
-
     }
 }
